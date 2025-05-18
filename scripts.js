@@ -25,3 +25,15 @@ let menu = document.querySelector('.menu');
     });
 
 
+const imagem = document.getElementById("primeira-imagem");
+
+  imagem.addEventListener("click", function() {
+    // Código para o efeito ou redirecionamento
+
+    // Exemplo de redirecionamento:
+    window.location.href = "primeira.html";
+
+    // Exemplo de efeito (mudar a posição da imagem):
+    imagem.style.left = "200px";
+    imagem.style.top = "100px";
+  });
