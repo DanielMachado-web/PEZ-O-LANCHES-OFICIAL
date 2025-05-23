@@ -56,7 +56,7 @@ body {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 100px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -199,7 +199,7 @@ nav ul li a:hover {
 
     transform: scaleX(1);
     right: 20px;
-    ;
+    
 
 }
 
