@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    border: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf)
 
 }
 
@@ -148,7 +149,7 @@ nav ul li a:hover {
 
 /* Seção Hero */
 .hero {
-    background: linear-gradient(rgb(253, 253, 253), rgb(252, 152, 1), #420101), url('fundo site.png');
+    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf), url('fundo site.png');
     /* Adicione uma imagem de fundo */
     background-size: cover;
     color: #fff;
@@ -160,7 +161,7 @@ nav ul li a:hover {
 
 .fundo-site {
     /*max-width: 526px; foi alterado*/
-
+    max-width: 100%;    
     background-color: #fdfbfb00;
     padding: 10px;
     border-radius: 8px;
@@ -206,7 +207,7 @@ nav ul li a:hover {
 /* Seção Destaques */
 #destaques {
     
-    background: linear-gradient(rgb(253, 253, 253), rgb(252, 152, 1), #420101)
+    background: linear-gradient(#ffffffb9, #9b5e02, #fffdfda6)
 }
 
 .destaques-grid {
@@ -244,6 +245,7 @@ nav ul li a:hover {
 /* Seção Cardápio */
 #cardapio {
     background-color: #f4f4f4;
+     background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
 }
 
 #cardapio ul {
@@ -313,6 +315,7 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart {
     background-color: #fd9e05;
+    
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -328,13 +331,15 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart:hover {
     background-color: #f57c00;
+    
 }
 
 
 
 /* Seção Delivery */
 #delivery {
-    background-color: #fff;
+    background-color: #0a0a0a;
+    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf);
 }
 
 
@@ -350,9 +355,19 @@ nav ul li a:hover {
 }
 
 /* Seção Sobre Nós e Contato */
-#sobre,
+#sobre {
+    background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
+
+}
+#sobre p {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 20px;
+    color: #000;
+}
 .footer-content {
-    background-color: #424242;
+    background-color: #4242423f;
+    
 }
 
 .footer-content-info {
