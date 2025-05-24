@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    border: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf)
 
 }
 
@@ -40,11 +41,11 @@ body {
 
 /* Estilo para os ícones das redes sociais */
 .social-media-icons a {
-    color: rgb(0, 0, 0);
+    color: rgb(2, 2, 2);
     /* Cor dos links */
     text-decoration: none;
     /* Remove o sublinhado dos links */
-    margin: 5 10px;
+    margin: 5 15px;
     /* Espaçamento entre os ícones */
 }
 
@@ -67,7 +68,7 @@ body {
 
 .section h2 {
     font-size: 2.5em;
-    color: #e91e63;
+    color: #000000;
     /* Um rosa vibrante para destaque */
     margin-bottom: 20px;
 }
@@ -85,13 +86,13 @@ body {
 .button.primary {
     background-color: #ff990081;
     /* Um laranja apetitoso */
-    color: #fff;
+    color: #000000;
 }
 
 .button.secondary {
-    background-color: #6666668c;
+    background-color: #ff990081;
     /* Um roxo moderno */
-    color: #fff;
+    color: #000000;
 }
 
 .button.small {
@@ -141,14 +142,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #960000;
+    color: #ffffff;
     transition: 0.3s;
 
 }
 
 /* Seção Hero */
 .hero {
-    background: linear-gradient(rgb(253, 253, 253), rgb(252, 152, 1), #420101), url('fundo site.png');
+    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf), url('fundo site.png');
     /* Adicione uma imagem de fundo */
     background-size: cover;
     color: #fff;
@@ -160,17 +161,18 @@ nav ul li a:hover {
 
 .fundo-site {
     /*max-width: 526px; foi alterado*/
-
+    max-width: 100%;    
     background-color: #fdfbfb00;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    width: 80%;
-    right: -380px;
+    width: 100%;
+    right: -550px;
     transform: translateY(-50% -25%);
     position: absolute;
-    top: -50%;
+    top: -70%;
     transform: rotate(-50deg -20deg);
 }
+
 
 
 .hero-content {
@@ -204,7 +206,8 @@ nav ul li a:hover {
 
 /* Seção Destaques */
 #destaques {
-    background-color: #fff;
+    
+    background: linear-gradient(#ffffffb9, #9b5e02, #fffdfda6)
 }
 
 .destaques-grid {
@@ -215,10 +218,10 @@ nav ul li a:hover {
 }
 
 .destaque-item {
-    background-color: #f9f9f9;
+    background-color: #ffffff10;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.096);
 }
 
 .destaque-item img {
@@ -229,19 +232,20 @@ nav ul li a:hover {
 }
 
 .destaque-item h3 {
-    color: #ff9800;
+    color: #f09001;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 .destaque-item p {
     font-size: 0.95em;
-    color: #666;
+    color: #000000;
 }
 
 /* Seção Cardápio */
 #cardapio {
     background-color: #f4f4f4;
+     background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
 }
 
 #cardapio ul {
@@ -257,14 +261,14 @@ nav ul li a:hover {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 7px;
+    background-color: #e2b900;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #cardapio ul li a:hover {
-    background-color: #070002;
+    background-color: #f7aa05;
     color: #fff;
 }
 
@@ -277,7 +281,7 @@ nav ul li a:hover {
 }
 
 .cardapio-item {
-    background-color: #3333331c;
+    background-color: #333333;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -292,25 +296,26 @@ nav ul li a:hover {
 }
 
 .cardapio-item h3 {
-    color: #333;
+    color: #ffffff;
     margin-top: 0;
     margin-bottom: 5px;
 }
 
 .cardapio-item .descricao {
-    color: #666;
+    color: #fffefe;
     font-size: 0.9em;
     margin-bottom: 10px;
 }
 
 .cardapio-item .preco {
-    color: #000000;
+    color: #f5f5f5;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .cardapio-item .add-to-cart {
-    background-color: #443216;
+    background-color: #fd9e05;
+    
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -326,13 +331,15 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart:hover {
     background-color: #f57c00;
+    
 }
 
 
 
 /* Seção Delivery */
 #delivery {
-    background-color: #fff;
+    background-color: #0a0a0a;
+    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf);
 }
 
 
@@ -348,9 +355,19 @@ nav ul li a:hover {
 }
 
 /* Seção Sobre Nós e Contato */
-#sobre,
+#sobre {
+    background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
+
+}
+#sobre p {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 20px;
+    color: #000;
+}
 .footer-content {
-    background-color: #424242;
+    background-color: #4242423f;
+    
 }
 
 .footer-content-info {
