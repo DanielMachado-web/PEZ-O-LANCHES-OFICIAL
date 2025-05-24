@@ -162,16 +162,15 @@ nav ul li a:hover {
     /*max-width: 526px; foi alterado*/
 
     background-color: #fdfbfb00;
-    padding: 10px;
+    padding: 20px;
     border-radius: 8px;
-    width: 100%;
-    right: -550px;
+    width: 80%;
+    right: -380px;
     transform: translateY(-50% -25%);
     position: absolute;
-    top: -70%;
+    top: -50%;
     transform: rotate(-50deg -20deg);
 }
-
 
 
 .hero-content {
