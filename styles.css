@@ -4,7 +4,6 @@
     padding: 0;
     font-family: 'Arial', sans-serif;
     border: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf)
-
 }
 
 
@@ -161,7 +160,7 @@ nav ul li a:hover {
 
 .fundo-site {
     /*max-width: 526px; foi alterado*/
-    max-width: 100%;    
+    max-width: 100%;
     background-color: #fdfbfb00;
     padding: 10px;
     border-radius: 8px;
@@ -172,9 +171,27 @@ nav ul li a:hover {
     top: -70%;
     transform: rotate(-50deg -20deg);
 }
+/*-------------------------SEÇÃO CAROUSEL-------------------------*/
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel-img {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carousel-img.active {
+    display: block;
+    position: relative;
+}
 
-
-
+/* Estilos para o conteúdo do carrossel */
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -206,7 +223,7 @@ nav ul li a:hover {
 
 /* Seção Destaques */
 #destaques {
-    
+
     background: linear-gradient(#ffffffb9, #9b5e02, #fffdfda6)
 }
 
@@ -245,7 +262,7 @@ nav ul li a:hover {
 /* Seção Cardápio */
 #cardapio {
     background-color: #f4f4f4;
-     background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
+    background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
 }
 
 #cardapio ul {
@@ -275,8 +292,8 @@ nav ul li a:hover {
 .cardapio-lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding: 50px;
     justify-items: start;
 }
 
@@ -286,19 +303,24 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     text-align: left;
+
 }
 
 .cardapio-item img {
     max-width: 100%;
-    height: auto;
+    height: 50px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+    margin-top: 500px;
+
 }
 
 .cardapio-item h3 {
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 5px;
+    text-align: ;
 }
 
 .cardapio-item .descricao {
@@ -315,7 +337,7 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart {
     background-color: #fd9e05;
-    
+
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -331,7 +353,7 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart:hover {
     background-color: #f57c00;
-    
+
 }
 
 
@@ -359,15 +381,17 @@ nav ul li a:hover {
     background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
 
 }
+
 #sobre p {
     margin-bottom: 20px;
     text-align: justify;
     padding: 0 20px;
     color: #000;
 }
+
 .footer-content {
     background-color: #4242423f;
-    
+
 }
 
 .footer-content-info {
@@ -422,9 +446,10 @@ p {
     max-width: 100%;
     height: auto;
     margin-right: 10px;
-    
+
     /* Espaçamento entre as imagens */
 }
+
 /* Rodapé */
 footer {
     background-color: #333;

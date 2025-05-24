@@ -10,6 +10,21 @@ function revealElements() {
         }
     });
 }
+// Função para o carrossel de imagens
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".carousel-img");
+    let current = 0;
+
+    function showNext() {
+        images[current].classList.remove("active");
+        current = (current + 1) % images.length;
+        images[current].classList.add("active");
+    }
+
+    setInterval(showNext, 3000); // Troca a cada 3 segundos
+});
+
+
 
 
 // Ativar a função quando a página carrega e quando o usuário rola a tela
@@ -37,3 +52,6 @@ const imagem = document.getElementById("primeira-imagem");
     imagem.style.left = "200px";
     imagem.style.top = "100px";
   });
+
+
+
