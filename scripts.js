@@ -37,3 +37,6 @@ const imagem = document.getElementById("primeira-imagem");
     imagem.style.left = "200px";
     imagem.style.top = "100px";
   });
+
+
+

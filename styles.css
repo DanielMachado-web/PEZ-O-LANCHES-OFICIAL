@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    border: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf)
-
+    
 }
 
 
@@ -15,7 +14,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6
 
 }
 
@@ -36,7 +35,7 @@ body {
     border-radius: 12px;
     margin: auto;
     z-index: 1;
-    opacity: 70%;
+    opacity: 80%;
 }
 
 /* Estilo para os ícones das redes sociais */
@@ -70,7 +69,7 @@ body {
     font-size: 2.5em;
     color: #000000;
     /* Um rosa vibrante para destaque */
-    margin-bottom: 20px;
+    margin-bottom: 40px
 }
 
 .button {
@@ -81,22 +80,23 @@ body {
     transition: background-color 0.3s ease;
     font-weight: bold;
     margin-top: 15px;
+    margin-bottom: -50px
 }
 
 .button.primary {
-    background-color: #ff990081;
+    background-color: #ff9900;
     /* Um laranja apetitoso */
     color: #000000;
 }
 
 .button.secondary {
-    background-color: #ff990081;
+    background-color: #ff9900;
     /* Um roxo moderno */
     color: #000000;
 }
 
 .button.small {
-    padding: 8px 25px;
+    padding: 10px25px;
     font-size: 0.9em;
 }
 
@@ -161,24 +161,18 @@ nav ul li a:hover {
 
 .fundo-site {
     /*max-width: 526px; foi alterado*/
-    max-width: 100%;    
+    max-width: 100%;
     background-color: #fdfbfb00;
     padding: 10px;
     border-radius: 8px;
-    width: 100%;
-    right: -550px;
+    width: 80%;
+    right: -500px;
     transform: translateY(-50% -25%);
     position: absolute;
-    top: -70%;
+    top: -50%;
     transform: rotate(-50deg -20deg);
 }
 
-
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .hero h1 {
     font-size: 2em;
@@ -193,20 +187,21 @@ nav ul li a:hover {
 .hero-image {
     display: none;
     /* Ocultar em telas menores */
-    margin: top 80px;
-    max-width: 100%;
+    margin: top -80px;
+    max-width: 500px;
     height: auto;
-
+    border-radius: 8px;
+    padding-top: 20px;
     transform: scaleX(1);
-    right: 20px;
-    ;
+    right: -20px;
+    
 
 }
 
 
 /* Seção Destaques */
 #destaques {
-    
+
     background: linear-gradient(#ffffffb9, #9b5e02, #fffdfda6)
 }
 
@@ -245,7 +240,7 @@ nav ul li a:hover {
 /* Seção Cardápio */
 #cardapio {
     background-color: #f4f4f4;
-     background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
+    background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
 }
 
 #cardapio ul {
@@ -275,9 +270,10 @@ nav ul li a:hover {
 .cardapio-lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding: 50px;
     justify-items: start;
+    width: 100%;
 }
 
 .cardapio-item {
@@ -286,19 +282,25 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     text-align: left;
+
 }
 
 .cardapio-item img {
     max-width: 100%;
-    height: auto;
+    height: 50px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-top: 500px;
+    justify-items: center;
+
 }
 
 .cardapio-item h3 {
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .cardapio-item .descricao {
@@ -315,7 +317,7 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart {
     background-color: #fd9e05;
-    
+
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -331,27 +333,75 @@ nav ul li a:hover {
 
 .cardapio-item .add-to-cart:hover {
     background-color: #f57c00;
-    
+
 }
 
 
 
 /* Seção Delivery */
 #delivery {
-    background-color: #0a0a0a;
-    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf);
+    background-color: #ffffff;
+    background: linear-gradient(#b66e33, #9c5e03, #ffffff27);
 }
 
+#delivery h2 {
+    color: #f5f5f5;
+    margin-bottom: -20px;
+    left: -20px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#delivery button {
+    background-color: #fd9e05;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    
+    
+}
+
+#delivery img {
+    color: #f5f5f5;
+    position: inherit;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 20px;
+    text-align: center;
+    max-width: 100%;   
+    height: auto;
+    width: 50%;
+    height: auto;
+    margin-right: 50px;
+    
+
+}
+
+#delivery p {
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
 
 #delivery ol {
     list-style-type: decimal;
     padding-left: 40px;
     margin-bottom: 20px;
     text-align: left;
+    
 }
 
 #delivery ol li {
     margin-bottom: 10px;
+    
 }
 
 /* Seção Sobre Nós e Contato */
@@ -359,15 +409,17 @@ nav ul li a:hover {
     background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
 
 }
+
 #sobre p {
     margin-bottom: 20px;
     text-align: justify;
     padding: 0 20px;
     color: #000;
 }
+
 .footer-content {
     background-color: #4242423f;
-    
+
 }
 
 .footer-content-info {
@@ -383,38 +435,51 @@ nav ul li a:hover {
 .footer-contato-info h2,
 li,
 p {
-    margin-right: 10px;
-    color: #ffffff;
+    margin-right: 50px;
+    color: #0c0c0c;
     font-size: 1.2em;
-    right: 50px;
-    left: 50px;
+    right: 30px;
+    left: 30px;
     margin-right: 10px;
 }
 
 /*=================================cartão de crédito========================*/
 .cartaos {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;   
+    margin-top: 0px;
+    margin-right: 0px;
     position: relative;
-    bottom: -10px;
-    left: 0;
+    bottom: 10px;
+    left: -20px;
     align-items: center;
     bottom: 0;
     color: #000000;
-
+    background-color: #333;
+    border-bottom: 20px solid #fdfdfd;
+    padding: 100px;  
 }
 
 .titulos {
 
     right: 20px;
     height: 20px;
-    font-size: 1.2em;
     color: #000000;
     height: 50px;
     /* Altura da imagem */
     width: 100%;
     /* Largura da imagem */
+    margin-bottom: 20px;
+    /* Espaçamento inferior */
+    text-align: center;
+    /* Centraliza o texto */    
+    font-weight: bold;
+    /* Negrito */
+    margin-top: -130px;
+    /* Espaçamento superior */
+    font-size: 1.5em;
+    /* Tamanho da fonte */
+    
 
 }
 
@@ -422,9 +487,10 @@ p {
     max-width: 100%;
     height: auto;
     margin-right: 10px;
-    
-    /* Espaçamento entre as imagens */
+    width: 200px;
+    display: block;      /* Espaçamento entre as imagens */
 }
+
 /* Rodapé */
 footer {
     background-color: #333;
@@ -448,14 +514,14 @@ footer {
 
     .hero-content {
         max-width: 50%;
-        padding-right: 20px;
+        padding-right: 50px;
         transform: scaleX(1);
 
     }
 
     .hero-image {
         display: block;
-        max-width: 40%;
+        max-width: 100%;
     }
 
     nav ul {
