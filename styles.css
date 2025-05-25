@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    border: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf)
+    
 }
 
 
@@ -14,7 +14,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6
 
 }
 
@@ -35,7 +35,7 @@ body {
     border-radius: 12px;
     margin: auto;
     z-index: 1;
-    opacity: 70%;
+    opacity: 80%;
 }
 
 /* Estilo para os ícones das redes sociais */
@@ -69,7 +69,7 @@ body {
     font-size: 2.5em;
     color: #000000;
     /* Um rosa vibrante para destaque */
-    margin-bottom: 20px;
+    margin-bottom: 40px
 }
 
 .button {
@@ -80,22 +80,23 @@ body {
     transition: background-color 0.3s ease;
     font-weight: bold;
     margin-top: 15px;
+    margin-bottom: -50px
 }
 
 .button.primary {
-    background-color: #ff990081;
+    background-color: #ff9900;
     /* Um laranja apetitoso */
     color: #000000;
 }
 
 .button.secondary {
-    background-color: #ff990081;
+    background-color: #ff9900;
     /* Um roxo moderno */
     color: #000000;
 }
 
 .button.small {
-    padding: 8px 25px;
+    padding: 10px25px;
     font-size: 0.9em;
 }
 
@@ -272,7 +273,7 @@ nav ul li a:hover {
     gap: 50px;
     padding: 50px;
     justify-items: start;
-    width: 100px
+    width: 100%;
 }
 
 .cardapio-item {
@@ -339,8 +340,8 @@ nav ul li a:hover {
 
 /* Seção Delivery */
 #delivery {
-    background-color: #333;
-    
+    background-color: #ffffff;
+    background: linear-gradient(#b66e33, #9c5e03, #ffffff27);
 }
 
 #delivery h2 {
@@ -351,12 +352,36 @@ nav ul li a:hover {
     text-align: center;
 }
 
+#delivery button {
+    background-color: #fd9e05;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    
+    
+}
+
 #delivery img {
     color: #f5f5f5;
-    margin-bottom: 20px;
+    position: inherit;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 20px;
     text-align: center;
     max-width: 100%;   
     height: auto;
+    width: 50%;
+    height: auto;
+    margin-right: 50px;
+    
+
 }
 
 #delivery p {
@@ -439,7 +464,6 @@ p {
 
     right: 20px;
     height: 20px;
-    font-size: 1.2em;
     color: #000000;
     height: 50px;
     /* Altura da imagem */
@@ -455,9 +479,7 @@ p {
     /* Espaçamento superior */
     font-size: 1.5em;
     /* Tamanho da fonte */
-    color: #000;
-
-
+    
 
 }
 
@@ -466,11 +488,7 @@ p {
     height: auto;
     margin-right: 10px;
     width: 200px;
-     
-
-    
-
-    /* Espaçamento entre as imagens */
+    display: block;      /* Espaçamento entre as imagens */
 }
 
 /* Rodapé */
@@ -496,14 +514,14 @@ footer {
 
     .hero-content {
         max-width: 50%;
-        padding-right: 20px;
+        padding-right: 50px;
         transform: scaleX(1);
 
     }
 
     .hero-image {
         display: block;
-        max-width: 40%;
+        max-width: 100%;
     }
 
     nav ul {
