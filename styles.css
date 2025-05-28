@@ -66,13 +66,18 @@ body {
     text-align: center;
 }
 
+/* essa seção vale para todos h2------*/
 .section h2 {
     font-size: 2.5em;
     color: #000000;
     /* Um rosa vibrante para destaque */
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    text-shadow: 0 0 0.5em rgb(255, 255, 254), 0 0 0.3em rgb(10, 10, 10),
+        0 0 0.2em rgb(255, 255, 255);
+    
 }
-
+text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
+        0 0 0.2em rgb(254, 254, 255);
 .button {
     
     padding: 10px 20px;
@@ -225,7 +230,8 @@ nav ul li a:hover {
     background-color: #ffffff10;
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0 2px 5px rgba(245, 245, 245, 0.26);
+    box-shadow: 0 2px 5px rgb(245, 245, 245);
+    
 }
 
 .destaque-item img {
@@ -233,10 +239,12 @@ nav ul li a:hover {
     height: auto;
     border-radius: 5px;
     margin-bottom: 0px;
+    filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+
 }
 
 .destaque-item h3 {
-    color: #f09001;
+    color: #e07903;
     margin-top: -80px;
     margin-bottom: 10px;
     
