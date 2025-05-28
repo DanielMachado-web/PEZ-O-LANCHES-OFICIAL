@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #ff9900;
     line-height: 1.6
 
 }
@@ -117,7 +117,7 @@ body {
 
 /* Cabeçalho ------------------retirado para mudar layout justify-content: space-between;*/
 header {
-    background-color: #ffa600a9;
+    background-color: #ff9900;
     padding: 5px 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.137);
     display: flex;
