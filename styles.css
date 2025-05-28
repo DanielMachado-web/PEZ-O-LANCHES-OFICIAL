@@ -125,6 +125,7 @@ header {
     position: initial;
 }
 
+
 .logo img {
     max-height: 10rem;
     max-width: 150%;
@@ -533,7 +534,25 @@ footer p {
     margin-bottom: -50px;
     font-size: 0.9em;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.26), -1px -1px #444;
+
 }
+
+/*-----------------botao de voltar ao topo-----------------*/
+
+.footer content inicio {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    width: 500%;
+    text-align: right;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
 
 /*----------------------------segunda pagina do site----------------------------*/
 .button volar {
