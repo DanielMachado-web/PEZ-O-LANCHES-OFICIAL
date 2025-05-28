@@ -501,6 +501,47 @@ footer {
     font-size: 0.9em;
 }
 
+/*----------------------------segunda pagina do site----------------------------*/
+.button volar {
+
+    cursor: pointer;
+
+}
+
+.back-to-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  border-radius: 5px; /* Borda arredondada */
+  visibility: hidden; /* Inicialmente oculto */
+  opacity: 0; /* Transparência inicial */
+  transition: visibility 0.3s, opacity 0.3s; /* Transição suave para a visibilidade e opacidade */
+}
+
+.back-to-top:hover {
+  background-color: #3e8e41; /* Cor de fundo ao passar o mouse */
+}
+
+/* Mostrar o botão quando o usuário rolar a página */
+
+@media (min-width: 768px) {
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 /*========================localização do footer========================*/
 
 
