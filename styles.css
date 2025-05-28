@@ -21,22 +21,24 @@ body {
 
 /*================================icones redes sociais========================*/
 .social-media-icons {
-    background-color: #000000;
+    background-color: #000000b6;
     /* Cor de fundo do header */
     color: rgb(241, 241, 241);
     /* Cor do texto no header */
-    padding: 10px 30px;
+    padding: 10px 20px;
     /* Espaçamento interno */
     text-align: left;
     /* Alinhamento do texto */
     position: fixed;
     /* Fixa o header no topo */
-    top: 40px;
+    top: 5px;
     left: 1200px;
     border-radius: 10px;
     margin: auto;
     z-index: 1;
     opacity: 80%;
+    right: 10px;
+   
 }
 
 /* Estilo para os ícones das redes sociais */
@@ -115,16 +117,17 @@ body {
 
 /* Cabeçalho ------------------retirado para mudar layout justify-content: space-between;*/
 header {
-    background-color: #ebeaea75;
+    background-color: #ffa600a9;
     padding: 5px 15px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.911);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.137);
     display: flex;
     align-items: center;
+    position: initial;
 }
 
 .logo img {
     max-height: 10rem;
-    max-width: 100%;
+    max-width: 150%;
     cursor: pointer;
     filter: drop-shadow(0 0 8rem rgb(255, 254, 254));
    
@@ -184,7 +187,7 @@ nav ul li a:hover {
     right: -500px;
     transform: translateY(-50% -25%);
     position: absolute;
-    top: -50%;
+    top: -30%;
     transform: rotate(-50deg -20deg);
 }
 
