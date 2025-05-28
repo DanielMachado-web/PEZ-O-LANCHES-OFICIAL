@@ -39,4 +39,13 @@ const imagem = document.getElementById("primeira-imagem");
   });
 
 
+  const backToTopButton = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) { // Mostrar o botão quando rolar mais de 100px
+    backToTopButton.classList.add('show');
+  } else {
+    backToTopButton.classList.remove('show');
+  }
+});
 

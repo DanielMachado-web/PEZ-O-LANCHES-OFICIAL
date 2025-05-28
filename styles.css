@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+   
     
 }
 
@@ -13,14 +14,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #ff9900;
     line-height: 1.6
 
 }
 
 /*================================icones redes sociais========================*/
 .social-media-icons {
-    background-color: #f3f3f300;
+    background-color: #000000b6;
     /* Cor de fundo do header */
     color: rgb(241, 241, 241);
     /* Cor do texto no header */
@@ -30,17 +31,19 @@ body {
     /* Alinhamento do texto */
     position: fixed;
     /* Fixa o header no topo */
-    top: 40px;
+    top: 5px;
     left: 1200px;
-    border-radius: 12px;
+    border-radius: 10px;
     margin: auto;
     z-index: 1;
     opacity: 80%;
+    right: 10px;
+   
 }
 
 /* Estilo para os ícones das redes sociais */
 .social-media-icons a {
-    color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
     /* Cor dos links */
     text-decoration: none;
     /* Remove o sublinhado dos links */
@@ -65,22 +68,26 @@ body {
     text-align: center;
 }
 
+/* essa seção vale para todos h2------*/
 .section h2 {
     font-size: 2.5em;
     color: #000000;
     /* Um rosa vibrante para destaque */
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    
+    
 }
 
 .button {
-    display: inline-block;
+    
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     font-weight: bold;
     margin-top: 15px;
-    margin-bottom: -50px
+    margin-bottom: -150px
+
 }
 
 .button.primary {
@@ -100,6 +107,7 @@ body {
     font-size: 0.9em;
 }
 
+
 .button.full {
     display: block;
     width: 80%;
@@ -109,18 +117,21 @@ body {
 
 /* Cabeçalho ------------------retirado para mudar layout justify-content: space-between;*/
 header {
-    background-color: #ebeaea17;
-    padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ff9900;
+    padding: 5px 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.137);
     display: flex;
     align-items: center;
+    position: initial;
 }
+
 
 .logo img {
     max-height: 10rem;
-    max-width: 100%;
+    max-width: 150%;
     cursor: pointer;
-
+    filter: drop-shadow(0 0 8rem rgb(255, 254, 254));
+   
 }
 
 nav ul {
@@ -147,14 +158,22 @@ nav ul li a:hover {
 
 }
 
+.button:hover {
+    color: #f5f5f5;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Seção Hero */
 .hero {
-    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffffaf), url('fundo site.png');
+    background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffff85), url('fundo site.png');
     /* Adicione uma imagem de fundo */
     background-size: cover;
     color: #fff;
     text-align: center;
     padding: 10px 20px;
+    
 
 
 }
@@ -165,11 +184,11 @@ nav ul li a:hover {
     background-color: #fdfbfb00;
     padding: 10px;
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
     right: -500px;
     transform: translateY(-50% -25%);
     position: absolute;
-    top: -50%;
+    top: -30%;
     transform: rotate(-50deg -20deg);
 }
 
@@ -177,11 +196,14 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 2em;
     margin-bottom: 15px;
+    text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
+        0 0 0.2em rgb(254, 254, 255);
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    
 }
 
 .hero-image {
@@ -194,8 +216,9 @@ nav ul li a:hover {
     padding-top: 20px;
     transform: scaleX(1);
     right: -20px;
+    filter: drop-shadow(0 0 3rem rgb(255, 255, 255));
     
-
+        
 }
 
 
@@ -203,33 +226,45 @@ nav ul li a:hover {
 #destaques {
 
     background: linear-gradient(#ffffffb9, #9b5e02, #fffdfda6)
+    
 }
 
 .destaques-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .destaque-item {
     background-color: #ffffff10;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.096);
+    padding: 5px;
+    box-shadow: 0 2px 5px rgb(245, 245, 245);
+    
 }
 
 .destaque-item img {
-    max-width: 100%;
+    max-width: 500%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+
 }
 
 .destaque-item h3 {
-    color: #f09001;
-    margin-top: 0;
+    color: #e07903;
+    margin-top: -80px;
     margin-bottom: 10px;
+    
+}
+
+.destaque-item h3:hover {
+    color: #f5f5f5;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .destaque-item p {
@@ -246,10 +281,11 @@ nav ul li a:hover {
 #cardapio ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 70px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 
 #cardapio ul li a {
@@ -260,6 +296,7 @@ nav ul li a:hover {
     border-radius: 7px;
     background-color: #e2b900;
     transition: background-color 0.3s ease, color 0.3s ease;
+    
 }
 
 #cardapio ul li a:hover {
@@ -282,7 +319,7 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     text-align: left;
-
+    
 }
 
 .cardapio-item img {
@@ -301,6 +338,7 @@ nav ul li a:hover {
     margin-top: 0;
     margin-bottom: 5px;
     text-align: left;
+    
 }
 
 .cardapio-item .descricao {
@@ -315,27 +353,6 @@ nav ul li a:hover {
     font-size: 1.1em;
 }
 
-.cardapio-item .add-to-cart {
-    background-color: #fd9e05;
-
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.cardapio-item .add-to-cart:hover {
-    background-color: #f57c00;
-
-}
-
 
 
 /* Seção Delivery */
@@ -346,23 +363,28 @@ nav ul li a:hover {
 
 #delivery h2 {
     color: #f5f5f5;
-    margin-bottom: -20px;
-    left: -20px;
+    margin-bottom: 10px;
+    left: -70px;
     font-size: 2.5em;
     text-align: center;
+    text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
+        0 0 0.2em rgb(254, 254, 255);
 }
 
 #delivery button {
     background-color: #fd9e05;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 0px 0px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
+    left: 30px;
+    right: 30px;
+    
     
     
 }
@@ -373,11 +395,11 @@ nav ul li a:hover {
     margin-bottom: 0px;
     margin-top: 0px;
     max-width: 100%;
-    padding-left: 20px;
+    padding-left: 20vh;
     text-align: center;
     max-width: 100%;   
     height: auto;
-    width: 50%;
+    width: 70%;
     height: auto;
     margin-right: 50px;
     
@@ -389,12 +411,14 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: center;
     font-size: 1.2em;
+    text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
+        0 0 0.2em rgb(254, 254, 255);
 }
 
 #delivery ol {
     list-style-type: decimal;
     padding-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: left;
     
 }
@@ -418,7 +442,8 @@ nav ul li a:hover {
 }
 
 .footer-content {
-    background-color: #4242423f;
+    background-color: #42424254;
+
 
 }
 
@@ -441,23 +466,26 @@ p {
     right: 30px;
     left: 30px;
     margin-right: 10px;
+    
+
 }
 
 /*=================================cartão de crédito========================*/
 .cartaos {
     display: flex;
-    margin-left: 0px;   
     margin-top: 0px;
     margin-right: 0px;
     position: relative;
-    bottom: 10px;
-    left: -20px;
+    bottom: -50px;
+    left: -100px;
     align-items: center;
     bottom: 0;
     color: #000000;
-    background-color: #333;
-    border-bottom: 20px solid #fdfdfd;
-    padding: 100px;  
+    background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
+    border-bottom: 20px solid #ffffff;
+    padding: 30px;  
+    width: 110%;
+    margin: 20px;
 }
 
 .titulos {
@@ -469,7 +497,7 @@ p {
     /* Altura da imagem */
     width: 100%;
     /* Largura da imagem */
-    margin-bottom: 20px;
+    margin-bottom: -70px;
     /* Espaçamento inferior */
     text-align: center;
     /* Centraliza o texto */    
@@ -479,6 +507,7 @@ p {
     /* Espaçamento superior */
     font-size: 1.5em;
     /* Tamanho da fonte */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452), -2px -2px 3px white;
     
 
 }
@@ -488,7 +517,8 @@ p {
     height: auto;
     margin-right: 10px;
     width: 200px;
-    display: block;      /* Espaçamento entre as imagens */
+    display: block; 
+    margin-bottom: 0px;  /* Espaçamento entre as imagens */
 }
 
 /* Rodapé */
@@ -496,9 +526,74 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+    padding: 50px;
+    font-size: 1.0em;
 }
+
+footer p {
+    margin-bottom: -50px;
+    font-size: 0.9em;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.26), -1px -1px #444;
+
+}
+
+/*-----------------botao de voltar ao topo-----------------*/
+
+.footer content inicio {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    width: 500%;
+    text-align: right;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+
+/*----------------------------segunda pagina do site----------------------------*/
+.button volar {
+
+    cursor: pointer;
+
+}
+
+.back-to-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  border-radius: 5px; /* Borda arredondada */
+  visibility: hidden; /* Inicialmente oculto */
+  opacity: 0; /* Transparência inicial */
+  transition: visibility 0.3s, opacity 0.3s; /* Transição suave para a visibilidade e opacidade */
+}
+
+.back-to-top:hover {
+  background-color: #3e8e41; /* Cor de fundo ao passar o mouse */
+}
+
+/* Mostrar o botão quando o usuário rolar a página */
+
+@media (min-width: 768px) {
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 /*========================localização do footer========================*/
 
@@ -536,7 +631,7 @@ footer {
 /* Animações */
 .fade-in {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .fade-in.visible {
@@ -546,7 +641,7 @@ footer {
 .slide-in-left {
     transform: translateX(-50px);
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .slide-in-left.visible {
