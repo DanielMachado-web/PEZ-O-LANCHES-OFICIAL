@@ -32,6 +32,7 @@ const imagem = document.getElementById("primeira-imagem");
 
     // Exemplo de redirecionamento:
     window.location.href = "primeira.html";
+    window.location.herf = "segunda.html";
 
     // Exemplo de efeito (mudar a posição da imagem):
     imagem.style.left = "200px";
