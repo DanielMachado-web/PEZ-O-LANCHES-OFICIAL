@@ -196,8 +196,8 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 2em;
     margin-bottom: 15px;
-    text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
-        0 0 0.2em rgb(254, 254, 255);
+    text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.37), 0 0 0.3em rgb(230, 150, 3),
+        0 0 0.2em rgba(254, 254, 255, 0.514);
 }
 
 .hero p {
@@ -369,8 +369,8 @@ nav ul li a:hover {
     left: -70px;
     font-size: 2.8em;
     text-align: center;
-    text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
-        0 0 0.2em rgb(254, 254, 255);
+    text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.671), 0 0 0.3em rgba(230, 151, 3, 0.753),
+        0 0 0.2em rgba(254, 254, 255, 0.596);
 }
 
 #delivery button {
@@ -382,28 +382,28 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
-    width: 100%;
+    width: 80%;
     margin-top: 0px;
-    left: 30px;
-    right: 30px;
+    left: 50px;
+    right: 80px;
     
     
     
 }
 
 #delivery img {
-    color: #f5f5f5;
-    position: inherit;
+    color: #f5f5f559;
+    position: relative;
     margin-bottom: 0px;
     margin-top: 0px;
     max-width: 100%;
-    padding-left: 20vh;
+    padding-left: 300px;
     text-align: center;
-    max-width: 100%;   
+    max-width: 120%;   
     height: auto;
     width: 70%;
     height: auto;
-    margin-right: 50px;
+    margin-right: 450px;
     
 
 }
@@ -483,8 +483,8 @@ p {
     align-items: center;
     bottom: 0;
     color: #ffffff;
-    background: linear-gradient(#ffffff85, #ff9900, #ffffffa6);
-    border-bottom: 10px solid #0e0d0d11;
+    background: linear-gradient(#ffffff00, #181818d8, #ffffffa6);
+    border-bottom: 10px solid #fdfcfc00;
     padding: 30px;  
     width: 110%;
     margin: 20px;
@@ -509,7 +509,7 @@ p {
     /* Espaçamento superior */
     font-size: 1.5em;
     /* Tamanho da fonte */
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452), -2px -2px 3px white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.253), -2px -2px 3px white;
     
 
 }
@@ -525,7 +525,7 @@ p {
 
 /* Rodapé */
 footer {
-    background-color: #ff9900;
+    background-color: #464646;
     color: #fff;
     text-align: center;
     padding: 50px;
@@ -549,7 +549,7 @@ footer p {
     width: 500%;
     text-align: right;
     padding: 20px;
-    background-color: #333;
+    background-color: #3333335d;
     color: #fff;
     font-size: 1.2em;
 }
