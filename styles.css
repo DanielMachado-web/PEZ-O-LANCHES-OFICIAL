@@ -296,6 +296,7 @@ nav ul li a:hover {
     border-radius: 7px;
     background-color: #e2b900;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
     
 }
 
@@ -311,6 +312,7 @@ nav ul li a:hover {
     padding: 50px;
     justify-items: start;
     width: 100%;
+    cursor: pointer;
 }
 
 .cardapio-item {
