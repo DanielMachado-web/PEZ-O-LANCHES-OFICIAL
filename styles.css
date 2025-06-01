@@ -360,14 +360,14 @@ nav ul li a:hover {
 /* Seção Delivery */
 #delivery {
     background-color: #ffffff;
-    background: linear-gradient(#b66e33, #9c5e03, #ffffff27);
+    background: linear-gradient(#f57c02, #9c5e03, #ffffff27);
 }
 
 #delivery h2 {
     color: #f5f5f5;
     margin-bottom: 10px;
     left: -70px;
-    font-size: 2.5em;
+    font-size: 2.8em;
     text-align: center;
     text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.3em rgb(230, 150, 3),
         0 0 0.2em rgb(254, 254, 255);
@@ -432,15 +432,15 @@ nav ul li a:hover {
 
 /* Seção Sobre Nós e Contato */
 #sobre {
-    background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
+    background: linear-gradient(#fdfdfd, #9b5e02d3, #ffffff98);
 
 }
 
 #sobre p {
-    margin-bottom: 20px;
-    text-align: justify;
-    padding: 0 20px;
-    color: #000;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0 15px;
+    color: #ffffff;
 }
 
 .footer-content {
@@ -463,7 +463,7 @@ nav ul li a:hover {
 li,
 p {
     margin-right: 50px;
-    color: #0c0c0c;
+    color: #fffafa;
     font-size: 1.2em;
     right: 30px;
     left: 30px;
@@ -482,9 +482,9 @@ p {
     left: -100px;
     align-items: center;
     bottom: 0;
-    color: #000000;
-    background: linear-gradient(#fdfdfd, #9b5e02, #fffffff3);
-    border-bottom: 20px solid #ffffff;
+    color: #ffffff;
+    background: linear-gradient(#ffffff85, #ff9900, #ffffffa6);
+    border-bottom: 10px solid #0e0d0d11;
     padding: 30px;  
     width: 110%;
     margin: 20px;
@@ -525,7 +525,7 @@ p {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #ff9900;
     color: #fff;
     text-align: center;
     padding: 50px;
@@ -535,7 +535,7 @@ footer {
 footer p {
     margin-bottom: -50px;
     font-size: 0.9em;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.26), -1px -1px #444;
+   color: #ffffff;
 
 }
 
