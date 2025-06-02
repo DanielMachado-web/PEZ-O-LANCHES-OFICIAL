@@ -3,11 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-   
-    
+      
 }
-
-
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,6 +13,8 @@ body {
     background-color: #f4f4f4;
     color: #ff9900;
     line-height: 1.6
+    
+    /* Garante que o corpo ocupe pelo menos a altura total da janela */
 
 }
 
@@ -589,7 +588,7 @@ footer p {
 
 
 /* Estilos Responsivos */
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .hero {
         display: flex;
         justify-content: space-around;
@@ -652,12 +651,12 @@ footer p {
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
     .container {
         padding: 40px;
     }
 
     .section {
-        padding: 80px 40px;
+        padding: 100px 40px;
     }
 }
