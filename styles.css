@@ -582,26 +582,13 @@ footer p {
   background-color: #3e8e41; /* Cor de fundo ao passar o mouse */
 }
 
-/* Mostrar o botão quando o usuário rolar a página */
-
-@media (min-width: 768px) {
-  body {
-    scroll-behavior: smooth;
-  }
-}
-
-.back-to-top.show {
-  visibility: visible;
-  opacity: 1;
-}
-
 
 
 /*========================localização do footer========================*/
 
 
 /* Estilos Responsivos */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .hero {
         display: flex;
         justify-content: space-around;
@@ -664,7 +651,7 @@ footer p {
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
     .container {
         padding: 40px;
     }
