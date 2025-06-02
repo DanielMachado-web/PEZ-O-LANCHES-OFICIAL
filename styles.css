@@ -127,10 +127,11 @@ header {
 
 
 .logo img {
-    max-height: 10rem;
+    max-height: 15rem;
     max-width: 150%;
     cursor: pointer;
     filter: drop-shadow(0 0 8rem rgb(255, 254, 254));
+    overflow: hidden;
    
 }
 
