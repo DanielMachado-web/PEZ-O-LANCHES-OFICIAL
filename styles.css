@@ -242,6 +242,9 @@ nav ul li a:hover {
     border-radius: 5px;
     margin-bottom: 0px;
     filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 
 }
 
@@ -274,10 +277,11 @@ nav ul li a:hover {
     list-style: none;
     padding: 0;
     margin: 70px 0;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
-
+    display: flex;
+    
 }
 
 #cardapio ul li a {
@@ -382,17 +386,16 @@ nav ul li a:hover {
 
 #delivery img {
     color: #f5f5f559;
-    position: relative;
+    position: inherit;
     margin-bottom: 0px;
-    margin-top: 0px;
-    max-width: 100%;
-    padding-left: 300px;
+    margin-top: -80px;
+    max-width: 40%;
     text-align: center;
     max-width: 120%;
     height: auto;
     width: 70%;
-    height: auto;
-    margin-right: 450px;
+    height: 80%;
+    margin-right: -850px;
 
 
 }
@@ -598,12 +601,12 @@ footer p {
 
 
 /* Estilos Responsivos */
-@media (min-width: 968px) {
+@media screen and (min-width: 968px) {
     .hero {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        text-align: left;
+        text-align: left;          
 
 
     }
@@ -634,11 +637,16 @@ footer p {
         padding: 60px 20px;
     }
 
-    .botao-menu{
-        ;
-    }
+    nave.menu{
+        display: block;
+        flex-direction: column;
 
-    
+    }         
+
+    .menu.ativo {
+        max-width: 200px;
+        margin-left: 50px;
+    }       
 
 
 }
@@ -696,6 +704,11 @@ footer p {
 
     }
 
+    #cardapio ul {
+        flex-direction: column;
+        gap: 20px;
+
+    }
     
 
 
