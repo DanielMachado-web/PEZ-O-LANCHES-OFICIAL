@@ -135,7 +135,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: table-column;
 }
 
 nav ul li {
@@ -179,11 +179,9 @@ nav ul li a:hover {
     background-color: #fdfbfb00;
     padding: 10px;
     border-radius: 8px;
-    width: 100%;
-    right: -500px;
+    width: 100%;    
     transform: translateY(-50% -25%);
-    position: absolute;
-    top: -30%;
+    position: inherit;    
     transform: rotate(-50deg -20deg);
 }
 
@@ -516,11 +514,11 @@ p {
 }
 
 .section .cartaos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Rodapé */
 footer {
@@ -600,18 +598,20 @@ footer p {
 
 
 /* Estilos Responsivos */
-@media screen and (min-width: 768px) {
+@media (min-width: 968px) {
     .hero {
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: left;
+
+
     }
 
     .hero-content {
-        max-width: 50%;
-        padding-right: 50px;
+        max-width: 500px;
         transform: scaleX(1);
+
 
     }
 
@@ -619,8 +619,6 @@ footer p {
         display: block;
         max-width: 100%;
     }
-
-
 
     nav ul {
         display: flex;
@@ -636,11 +634,14 @@ footer p {
         padding: 60px 20px;
     }
 
+    .botao-menu{
+        ;
+    }
+
+    
 
 
 }
-
-
 
 
 /* Animações */
@@ -680,6 +681,7 @@ footer p {
 @media (min-width: 650px) {
     .container {
         padding: 40px;
+
     }
 
     .section {
@@ -691,6 +693,7 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
     }
 
     
