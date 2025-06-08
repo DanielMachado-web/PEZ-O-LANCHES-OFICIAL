@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
- 
-      
+
+
 }
 
 body {
@@ -12,9 +12,7 @@ body {
     background-color: #f4f4f4;
     color: #ff9900;
     line-height: 1.6
-   
-    
-    /* Garante que o corpo ocupe pelo menos a altura total da janela */
+        /* Garante que o corpo ocupe pelo menos a altura total da janela */
 
 }
 
@@ -37,7 +35,7 @@ body {
     z-index: 1;
     opacity: 80%;
     right: 10px;
-   
+
 }
 
 /* Estilo para os ícones das redes sociais */
@@ -73,12 +71,12 @@ body {
     color: #000000;
     /* Um rosa vibrante para destaque */
     margin-bottom: 40px;
-    
-    
+
+
 }
 
 .button {
-    
+
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -86,7 +84,6 @@ body {
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: -150px
-
 }
 
 .button.primary {
@@ -130,8 +127,8 @@ header {
     max-width: 180%;
     cursor: pointer;
     filter: drop-shadow(0 0 8rem rgb(255, 254, 254));
-    
-   
+
+
 }
 
 nav ul {
@@ -172,8 +169,8 @@ nav ul li a:hover {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 10px 20px; 
-    
+    padding: 10px 20px;
+
 }
 
 .fundo-site {
@@ -201,7 +198,7 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    
+
 }
 
 .hero-image {
@@ -215,8 +212,8 @@ nav ul li a:hover {
     transform: scaleX(1);
     right: -20px;
     filter: drop-shadow(0 0 3rem rgb(255, 255, 255));
-    
-        
+
+
 }
 
 
@@ -224,7 +221,6 @@ nav ul li a:hover {
 #destaques {
 
     background: linear-gradient(#ffffffb9, #9b5e02, #fffdfda6)
-    
 }
 
 .destaques-grid {
@@ -239,7 +235,7 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 5px;
     box-shadow: 0 2px 5px rgb(245, 245, 245);
-    
+
 }
 
 .destaque-item img {
@@ -255,7 +251,7 @@ nav ul li a:hover {
     color: #e07903;
     margin-top: -80px;
     margin-bottom: 10px;
-    
+
 }
 
 .destaque-item h3:hover {
@@ -283,7 +279,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+
 }
 
 #cardapio ul li a {
@@ -295,7 +291,7 @@ nav ul li a:hover {
     background-color: #e2b900;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
-    
+
 }
 
 #cardapio ul li a:hover {
@@ -319,7 +315,7 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     text-align: left;
-    
+
 }
 
 .cardapio-item img {
@@ -338,7 +334,7 @@ nav ul li a:hover {
     margin-top: 0;
     margin-bottom: 5px;
     text-align: left;
-    
+
 }
 
 .cardapio-item .descricao {
@@ -394,12 +390,12 @@ nav ul li a:hover {
     max-width: 100%;
     padding-left: 300px;
     text-align: center;
-    max-width: 120%;   
+    max-width: 120%;
     height: auto;
     width: 70%;
     height: auto;
     margin-right: 450px;
-    
+
 
 }
 
@@ -417,12 +413,12 @@ nav ul li a:hover {
     padding-left: 40px;
     margin-bottom: 50px;
     text-align: left;
-    
+
 }
 
 #delivery ol li {
     margin-bottom: 10px;
-    
+
 }
 
 /* Seção Sobre Nós e Contato */
@@ -463,7 +459,7 @@ p {
     right: 30px;
     left: 30px;
     margin-right: 10px;
-    
+
 
 }
 
@@ -480,7 +476,7 @@ p {
     color: #ffffff;
     background: linear-gradient(#ffffff00, #181818d8, #ffffffa6);
     border-bottom: 10px solid #fdfcfc00;
-    padding: 30px;  
+    padding: 30px;
     width: 110%;
     margin: 60px;
 }
@@ -497,7 +493,7 @@ p {
     margin-bottom: -70px;
     /* Espaçamento inferior */
     text-align: center;
-    /* Centraliza o texto */    
+    /* Centraliza o texto */
     font-weight: bold;
     /* Negrito */
     margin-top: -130px;
@@ -505,7 +501,7 @@ p {
     font-size: 1.5em;
     /* Tamanho da fonte */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.253), -2px -2px 3px white;
-    
+
 
 }
 
@@ -514,9 +510,17 @@ p {
     height: auto;
     margin-right: 10px;
     width: 200px;
-    display: block; 
-    margin-bottom: 0px;  /* Espaçamento entre as imagens */
+    display: block;
+    margin-bottom: 0px;
+    /* Espaçamento entre as imagens */
 }
+
+.section .cartaos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
 /* Rodapé */
 footer {
@@ -530,7 +534,7 @@ footer {
 footer p {
     margin-bottom: -50px;
     font-size: 0.9em;
-   color: #ffffff;
+    color: #ffffff;
 
 }
 
@@ -549,7 +553,7 @@ footer p {
     font-size: 1.2em;
 }
 
-.logo-footer{
+.logo-footer {
     margin-top: 50px;
     margin-bottom: auto;
 }
@@ -564,22 +568,30 @@ footer p {
 }
 
 .back-to-top {
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  text-decoration: none; /* Remove o sublinhado padrão do link */
-  border-radius: 5px; /* Borda arredondada */
-  visibility: hidden; /* Inicialmente oculto */
-  opacity: 0; /* Transparência inicial */
-  transition: visibility 0.3s, opacity 0.3s; /* Transição suave para a visibilidade e opacidade */
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado padrão do link */
+    border-radius: 5px;
+    /* Borda arredondada */
+    visibility: hidden;
+    /* Inicialmente oculto */
+    opacity: 0;
+    /* Transparência inicial */
+    transition: visibility 0.3s, opacity 0.3s;
+    /* Transição suave para a visibilidade e opacidade */
 }
 
 .back-to-top:hover {
-  background-color: #3e8e41; /* Cor de fundo ao passar o mouse */
+    background-color: #3e8e41;
+    /* Cor de fundo ao passar o mouse */
 }
 
 
@@ -588,7 +600,7 @@ footer p {
 
 
 /* Estilos Responsivos */
-@media (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .hero {
         display: flex;
         justify-content: space-around;
@@ -608,14 +620,26 @@ footer p {
         max-width: 100%;
     }
 
+
+
     nav ul {
         display: flex;
+    }
+
+    nav ul li a {
+        width: 20px;
+
+
     }
 
     .section {
         padding: 60px 20px;
     }
+
+
+
 }
+
 
 
 
@@ -653,7 +677,7 @@ footer p {
 
 
 
-@media (min-width: 750px) {
+@media (min-width: 650px) {
     .container {
         padding: 40px;
     }
@@ -662,5 +686,16 @@ footer p {
         padding: 100px 50px;
     }
 
+    .section .cartaos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     
+
+
+
+
 }

@@ -16,7 +16,7 @@ function revealElements() {
 window.addEventListener('load', revealElements);
 window.addEventListener('scroll', revealElements);
 
-let botao = document.querySelector('.botao');
+let botao = document.querySelector('.botao .botao-menu');
 let menu = document.querySelector('.menu');
 
     botao.addEventListener('click', function() {
