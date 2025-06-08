@@ -179,9 +179,9 @@ nav ul li a:hover {
     background-color: #fdfbfb00;
     padding: 10px;
     border-radius: 8px;
-    width: 100%;    
+    width: 100%;
     transform: translateY(-50% -25%);
-    position: inherit;    
+    position: inherit;
     transform: rotate(-50deg -20deg);
 }
 
@@ -281,7 +281,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
     display: flex;
-    
+
 }
 
 #cardapio ul li a {
@@ -471,7 +471,7 @@ p {
     margin-right: 0px;
     position: relative;
     bottom: -50px;
-    left: -100px;
+    left: -130px;
     align-items: center;
     bottom: 0;
     color: #ffffff;
@@ -559,6 +559,13 @@ footer p {
     margin-bottom: auto;
 }
 
+.botao-menu{
+    display: block;
+}
+
+
+
+
 
 
 /*----------------------------segunda pagina do site----------------------------*/
@@ -601,21 +608,17 @@ footer p {
 
 
 /* Estilos Responsivos */
-@media screen and (min-width: 968px) {
+@media  (min-width: 968px) {
     .hero {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        text-align: left;          
-
-
+        text-align: left;
     }
 
     .hero-content {
-        max-width: 500px;
+        max-width: 300px;
         transform: scaleX(1);
-
-
     }
 
     .hero-image {
@@ -629,24 +632,13 @@ footer p {
 
     nav ul li a {
         width: 20px;
-
-
     }
 
     .section {
         padding: 60px 20px;
     }
 
-    nave.menu{
-        display: block;
-        flex-direction: column;
 
-    }         
-
-    .menu.ativo {
-        max-width: 200px;
-        margin-left: 50px;
-    }       
 
 
 }
@@ -693,7 +685,7 @@ footer p {
     }
 
     .section {
-        padding: 100px 50px;
+        padding: 50px 50px;
     }
 
     .section .cartaos {
@@ -706,10 +698,9 @@ footer p {
 
     #cardapio ul {
         flex-direction: column;
-        gap: 20px;
+        gap: 20px;      
 
     }
-    
 
 
 
