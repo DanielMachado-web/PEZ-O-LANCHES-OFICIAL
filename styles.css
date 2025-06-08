@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+ 
       
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #ff9900;
     line-height: 1.6
+   
     
     /* Garante que o corpo ocupe pelo menos a altura total da janela */
 
@@ -172,10 +172,8 @@ nav ul li a:hover {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     
-
-
 }
 
 .fundo-site {
@@ -355,9 +353,8 @@ nav ul li a:hover {
     font-size: 1.1em;
 }
 
-
-
 /* Seção Delivery */
+
 #delivery {
     background-color: #ffffff;
     background: linear-gradient(#f57c02, #9c5e03, #ffffff27);
@@ -386,9 +383,7 @@ nav ul li a:hover {
     margin-top: 0px;
     left: 50px;
     right: 80px;
-    
-    
-    
+
 }
 
 #delivery img {
@@ -487,7 +482,7 @@ p {
     border-bottom: 10px solid #fdfcfc00;
     padding: 30px;  
     width: 110%;
-    margin: 20px;
+    margin: 60px;
 }
 
 .titulos {
@@ -622,6 +617,8 @@ footer p {
     }
 }
 
+
+
 /* Animações */
 .fade-in {
     opacity: 0;
@@ -656,12 +653,14 @@ footer p {
 
 
 
-@media (min-width: 450px) {
+@media (min-width: 750px) {
     .container {
         padding: 40px;
     }
 
     .section {
-        padding: 100px 4px;
+        padding: 100px 50px;
     }
+
+    
 }
