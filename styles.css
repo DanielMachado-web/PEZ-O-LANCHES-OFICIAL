@@ -3,8 +3,27 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+}
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulseScale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 body {
@@ -63,6 +82,28 @@ body {
 .section {
     padding: 40px 20px;
     text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -10px;
+    left: 25%;
+    background-color: #ff9900;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.section h2:hover::after {
+    transform: scaleX(1);
 }
 
 /* essa seção vale para todos h2------*/
@@ -76,14 +117,31 @@ body {
 }
 
 .button {
-
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    transition: all 0.3s ease;
     font-weight: bold;
     margin-top: 15px;
-    margin-bottom: -150px
+    margin-bottom: -150px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.5s;
+}
+
+.button:hover::before {
+    left: 100%;
 }
 
 .button.primary {
@@ -126,16 +184,41 @@ header {
     max-height: 10rem;
     max-width: 180%;
     cursor: pointer;
-    filter: drop-shadow(0 0 8rem rgb(255, 254, 254));
+    filter: drop-shadow(0 0 2rem rgba(255, 153, 0, 0.5));
+    animation: pulseScale 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
 
+.logo img:hover {
+    transform: scale(1.1);
+}
 
+nav {
+    position: relative;
+}
+
+.botao-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.botao-menu:hover {
+    color: #ffffff;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: table-column;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 nav ul li {
@@ -149,10 +232,33 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
+nav ul li a {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
 nav ul li a:hover {
     color: #ffffff;
     transition: 0.3s;
+}
 
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .button:hover {
@@ -165,12 +271,20 @@ nav ul li a:hover {
 /* Seção Hero */
 .hero {
     background: linear-gradient(#fdfdfdbe, #9b5e02, #ffffff85), url('fundo site.png');
-    /* Adicione uma imagem de fundo */
     background-size: cover;
     color: #fff;
     text-align: center;
     padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
 
+.hero-content {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.hero-image {
+    animation: slideInFromRight 1s ease-out;
 }
 
 .fundo-site {
@@ -269,36 +383,164 @@ nav ul li a:hover {
 
 /* Seção Cardápio */
 #cardapio {
-    background-color: #f4f4f4;
-    background: linear-gradient(#ffffffcc, #9b5e02, #fffdfdc2)
+    background: linear-gradient(135deg, #fff5e6, #9b5e02);
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#cardapio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
 }
 
 #cardapio ul {
     list-style: none;
     padding: 0;
-    margin: 70px 0;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    display: flex;
-
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
 }
 
 #cardapio ul li a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 7px;
-    background-color: #e2b900;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
     cursor: pointer;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
 
+#cardapio ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff9900, #ff7700);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+#cardapio ul li a span {
+    position: relative;
+    z-index: 2;
 }
 
 #cardapio ul li a:hover {
-    background-color: #f7aa05;
-    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#cardapio ul li a:hover::before {
+    opacity: 1;
+}
+
+#cardapio ul li a:hover span {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .botao-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 100;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 153, 0, 0.95);
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        animation: slideDown 0.3s ease-out forwards;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content, .hero-image {
+        animation: fadeIn 1s ease-out;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .social-media-icons {
+        position: static;
+        text-align: center;
+        padding: 10px;
+        left: auto;
+        right: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cartaos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartaos img {
+        margin: 10px 0;
+    }
+
+    #cardapio ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 .cardapio-lista {
@@ -353,9 +595,29 @@ nav ul li a:hover {
 
 /* Seção Delivery */
 
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
 #delivery {
-    background-color: #ffffff;
-    background: linear-gradient(#f57c02, #9c5e03, #ffffff27);
+    background: linear-gradient(135deg, #f57c02, #9c5e03);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 20px;
+}
+
+#delivery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/delivery.png') center/contain no-repeat;
+    opacity: 0.1;
+    pointer-events: none;
 }
 
 #delivery h2 {
@@ -385,19 +647,12 @@ nav ul li a:hover {
 }
 
 #delivery img {
-    color: #f5f5f559;
-    position: inherit;
-    margin-bottom: 0px;
-    margin-top: -80px;
-    max-width: 40%;
-    text-align: center;
-    max-width: 120%;
-    height: auto;
-    width: 70%;
-    height: 80%;
-    margin-right: -850px;
-
-
+    position: relative;
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+    animation: float 3s infinite ease-in-out;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
 }
 
 #delivery p {
@@ -424,8 +679,40 @@ nav ul li a:hover {
 
 /* Seção Sobre Nós e Contato */
 #sobre {
-    background: linear-gradient(#fdfdfd, #9b5e02d3, #ffffff98);
+    background: linear-gradient(135deg, #fdfdfd, #9b5e02d3);
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
 
+#sobre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+}
+
+#sobre .content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #sobre p {
@@ -466,6 +753,61 @@ p {
 
 /*=================================cartão de crédito========================*/
 .cartaos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cartaos img {
+    transition: transform 0.3s ease;
+    filter: grayscale(20%);
+}
+
+.cartaos img:hover {
+    transform: translateY(-10px);
+    filter: grayscale(0%);
+}
+
+.destaque-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.destaque-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    animation: fadeIn 1s ease-out;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ff9900, #ff7700);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #000000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.logo-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     margin-top: 0px;
     margin-right: 0px;

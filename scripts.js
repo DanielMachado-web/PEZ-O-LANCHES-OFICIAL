@@ -1,44 +1,46 @@
-function revealElements() {
-    const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right', '.slide-in-up');
+document.addEventListener('DOMContentLoaded', function() {
+    // Menu mobile
+    const botaoMenu = document.querySelector('.botao-menu');
+    const menuNav = document.querySelector('nav ul');
 
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (elementTop < windowHeight - 50) { // 50px de buffer para começar a animação antes que o elemento esteja totalmente visível
-            element.classList.add('visible');
-        }
-    });
-}
-
-
-// Ativar a função quando a página carrega e quando o usuário rola a tela
-window.addEventListener('load', revealElements);
-window.addEventListener('scroll', revealElements);
-
-let botao = document.querySelector('.botao .botao-menu');
-let menu = document.querySelector('.menu');
-
-    botao.addEventListener('click', function() {
-        menu.classList.toggle('ativo');
-        botao.classList.toggle('ativo');
+    botaoMenu.addEventListener('click', function() {
+        menuNav.classList.toggle('active');
     });
 
+    // Fechar menu ao clicar em um link
+    const menuLinks = document.querySelectorAll('nav ul li a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuNav.classList.remove('active');
+        });
+    });
 
-const imagem = document.getElementById("primeira-imagem");
+    // Animação de scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-  imagem.addEventListener("click", function() {
-    // Código para o efeito ou redirecionamento
+    // Animação de elementos ao rolar a página
+    const observerOptions = {
+        threshold: 0.1
+    };
 
-    // Exemplo de redirecionamento:
-    window.location.href = "primeira.html";
-    window.location.herf = "segunda.html";
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
 
-    // Exemplo de efeito (mudar a posição da imagem):
-    imagem.style.left = "200px";
-    imagem.style.top = "100px";
-  });
-
-
-const segundaImagem = document.getElementById("segunda-imagem");  
+    // Observar elementos com classes de animação
+    document.querySelectorAll('.section, .destaque-item, .hero-content, .hero-image').forEach((el) => {
+        observer.observe(el);
+    });
+});
 
