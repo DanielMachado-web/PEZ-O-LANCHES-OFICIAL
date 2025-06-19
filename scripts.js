@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     botaoMenu.addEventListener('click', function() {
         menuNav.classList.toggle('active');
+        this.classList.toggle('active');
+        
+        // Adiciona/remove classe no body para prevenir scroll
+        document.body.classList.toggle('menu-open');
     });
 
     // Fechar menu ao clicar em um link

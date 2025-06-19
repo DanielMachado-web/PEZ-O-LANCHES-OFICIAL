@@ -37,24 +37,28 @@ body {
 
 /*================================icones redes sociais========================*/
 .social-media-icons {
-    background-color: #00000094;
-    /* Cor de fundo do header */
-    color: rgb(241, 241, 241);
-    /* Cor do texto no header */
-    padding: 10px 20px;
-    /* Espaçamento interno */
-    text-align: left;
-    /* Alinhamento do texto */
-    position: fixed;
-    /* Fixa o header no topo */
-    top: 5px;
-    left: 1200px;
-    border-radius: 10px;
-    margin: auto;
-    z-index: 1;
-    opacity: 80%;
-    right: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
 
+.social-media-icons a {
+    color: #333;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-media-icons a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para os ícones das redes sociais */
@@ -172,11 +176,38 @@ body {
 /* Cabeçalho ------------------retirado para mudar layout justify-content: space-between;*/
 header {
     background-color: #ff9900;
-    padding: 5px 15px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.137);
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    position: initial;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.inicio {
+    display: none;
+}
+
+.botao-menu {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        display: flex !important;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .social-media-icons {
+        position: static;
+        background: none;
+        opacity: 1;
+    }
 }
 
 
@@ -201,11 +232,40 @@ nav {
     display: none;
     background: none;
     border: none;
-    color: #333;
-    font-size: 1.5em;
     cursor: pointer;
     padding: 10px;
-    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.botao-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+}
+
+.botao-menu span:nth-child(1) { top: 0; }
+.botao-menu span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.botao-menu span:nth-child(3) { bottom: 0; }
+
+.botao-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.botao-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.botao-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 40%;
 }
 
 .botao-menu:hover {
@@ -456,6 +516,10 @@ nav ul li a:hover::after {
     color: #ffffff;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .botao-menu {
         display: block;
@@ -467,15 +531,42 @@ nav ul li a:hover::after {
 
     nav ul {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         left: 0;
         right: 0;
-        background: rgba(255, 153, 0, 0.95);
-        padding: 20px;
-        border-radius: 0 0 15px 15px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        animation: slideDown 0.3s ease-out forwards;
+        bottom: 0;
+        background: rgba(255, 153, 0, 0.98);
+        padding: 80px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 90;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    nav ul.active li {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+        color: white;
     }
 
     nav ul.active {
